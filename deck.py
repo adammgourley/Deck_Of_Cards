@@ -11,6 +11,7 @@ class Deck:
 		self.get_deck()
 
 	def get_deck(self):
+		self.deck = []
 		for s in Deck.suits:
 			for v in Deck.values:
 				self.deck.append(f"{str(v)} of {s}")
@@ -19,3 +20,7 @@ class Deck:
 	def shuffle(self, deck):
 		random.shuffle(deck)
 		return deck
+
+	def draw(self):
+		card = self.deck.pop()
+		return card
