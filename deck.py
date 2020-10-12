@@ -2,7 +2,6 @@
 
 import random
 
-
 class Deck:
 	suits = ["Hearts", "Clubs", "Spades", "Diamonds"]
 	values = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"]
@@ -10,7 +9,6 @@ class Deck:
 	def __init__(self):
 		self.deck = []
 		self.get_deck()
-
 
 	def get_deck(self):
 		for s in Deck.suits:
